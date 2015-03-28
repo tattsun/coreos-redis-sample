@@ -1,5 +1,6 @@
 [Unit]
 After=etcd-amb-redis2.service
+Require=etcd-amb-redis2.service
 
 [Service]
 ExecStartPre=-/usr/bin/docker kill %n
